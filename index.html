@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="dolanpls">
+<head>
+    <title>Dolan translator</title>
+    <meta charset="UTF-8">
+    <meta "description" content="Translate any text to Dolan's language. Pls.">
+    <meta "keywords" content="dolan translator, dolan, translator">
+    <link rel="stylesheet" href="./css/bootstrap-combined.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/dolanpls.css" type="text/css">
+</head>
+<body>
+    <div class="container" ng-controller="dolanplsController">
+        <textarea autofocus ng-model="inputText" ng-change="translate()"></textarea>
+        <textarea>{{translatedText}}</textarea>
+    </div>
+    <script type="text/javascript" src="./js/dictionary.js"></script>
+    <script type="text/javascript" src="./js/angular-1.0.1.min.js"></script>
+    <script type="text/javascript" src="./js/dolanpls.js"></script>
+</body>
+</html>
+
