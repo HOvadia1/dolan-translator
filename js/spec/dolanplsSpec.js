@@ -27,3 +27,44 @@ describe("translate()", function () {
     });
 });
 
+describe("orderDictionary()", function () {
+    it("should correctly order the dictionary", function () {
+        var dictionary,
+            orderedDictionary,
+            expectedDictionary,
+            keys,
+            key,
+            expectedKeys;
+
+        dictionary = {
+            "in":          ["n"],
+            "my":          ["mai"],
+            "bed":         ["bedd"],
+            "because":     ["cuz"],
+            "couch":       ["cuch"],
+            "is":          ["iz"]
+        };
+        expectedDictionary = {
+            "because":     ["cuz"],
+            "couch":       ["cuch"],
+            "bed":         ["bedd"],
+            "in":          ["n"],
+            "my":          ["mai"],
+            "is":          ["iz"]
+        };
+
+        orderedDictionary = orderDictionary(dictionary);
+
+        keys         = [];
+        expectedKeys = [];
+        for (key in expectedDictionary) {
+            keys.push(key);
+        }
+        for (key in orderedDictionary) {
+            expectedKeys.push(key);
+        }
+        expect(expectedKeys).toEqual(keys);
+
+        expect(orderedDictionary).toEqual(expectedDictionary);
+    });
+});
