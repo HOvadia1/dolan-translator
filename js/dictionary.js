@@ -35,7 +35,7 @@ var dictionary = {
     "brick":        ["brik"],
     "actually":     ["acuali", "accually"],
     "juice":        ["jewce"],
-    "do":           ["dew"],
+    "do":           ["dew", "do"],
     "want":         ["wnta"],
     "some":         ["soem", "sum"],
     "chicken":      ["chikn"],

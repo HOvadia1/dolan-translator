@@ -14,6 +14,21 @@ describe("translate()", function () {
         expect(translatedText).toEqual("Bonjour tout le monde!");
     });
 
+    it("should recursively translate the input text", function () {
+        var dictionary,
+            inputText,
+            translatedText;
+
+        inputText  = "Hello world! Hello!";
+        dictionary = {
+            "Hello": ["Bonjour"],
+            "world": ["tout le monde"]
+        };
+
+        translatedText = translate(dictionary, inputText);
+        expect(translatedText).toEqual("Bonjour tout le monde! Bonjour!");
+    });
+
     it("should return the input itself if no expression can be replaced", function () {
         var dictionary,
             inputText,

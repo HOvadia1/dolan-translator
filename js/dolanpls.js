@@ -13,13 +13,15 @@ function dolanplsController($scope) {
 function translate(dictionary, inputText) {
     var translatedText,
         replacement,
-        key;
+        key,
+        regex;
 
     translatedText = inputText;
 
     for (key in dictionary) {
         replacement = dictionary[key][Math.floor(Math.random() * dictionary[key].length)];
-        translatedText = translatedText.replace(key, replacement);
+        regex = new RegExp(key, 'g');
+        translatedText = translatedText.replace(regex, replacement);
     }
 
     return translatedText;
