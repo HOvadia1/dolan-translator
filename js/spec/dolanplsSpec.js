@@ -6,12 +6,12 @@ describe("translate()", function () {
 
         inputText  = "Hello world!";
         dictionary = {
-            "Hello": ["Bonjour"],
+            "Hello": ["bonjour"],
             "world": ["tout le monde"]
         };
 
         translatedText = translate(dictionary, inputText);
-        expect(translatedText).toEqual("Bonjour tout le monde!");
+        expect(translatedText).toEqual("bonjour tout le monde!");
     });
 
     it("should recursively translate the input text", function () {
@@ -83,3 +83,4 @@ describe("orderDictionary()", function () {
         expect(orderedDictionary).toEqual(expectedDictionary);
     });
 });
+

@@ -20,7 +20,7 @@ function translate(dictionary, inputText) {
 
     for (key in dictionary) {
         replacement = dictionary[key][Math.floor(Math.random() * dictionary[key].length)];
-        regex = new RegExp(key, 'g');
+        regex = new RegExp(key, 'gi');
         translatedText = translatedText.replace(regex, replacement);
     }
 
