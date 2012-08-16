@@ -29,7 +29,7 @@ describe("translate()", function () {
         expect(translatedText).toEqual("Bonjour tout le monde! Bonjour!");
     });
 
-    it("should return the input itself if no expression can be replaced", function () {
+    it("shouldn't replace what's inside a word", function () {
         var dictionary,
             inputText,
             translatedText,
@@ -39,6 +39,21 @@ describe("translate()", function () {
 
         translatedText = translate(dictionary, inputText);
         expect(translatedText).toEqual(inputText);
+    });
+
+    it("should return the input itself if no expression can be replaced", function () {
+        var dictionary,
+            inputText,
+            translatedText;
+
+        inputText  = "dolan, what did you do? you stupid-ass!";
+        dictionary = {
+            "do":     ["dew"],
+            "stupid": ["stupd"]
+        };
+
+        translatedText = translate(dictionary, inputText);
+        expect(translatedText).toEqual("dolan, what did you dew? you stupd-ass!");
     });
 });
 

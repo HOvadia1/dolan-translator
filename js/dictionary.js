@@ -106,7 +106,7 @@ var dictionary = {
     "cash":         ["kash"],
     "love":         ["loev", "lav", "luv"],
     "let's":        ["lez"],
-    "to":           ["2", "tu"],
+    "to":           ["too", "2", "tu"],
     "animal":       ["animel"],
     "matter":       ["maddr"],
     "real":         ["reel"],
@@ -201,5 +201,6 @@ var dictionary = {
     "blow":         ["blw"],
     "delicious":    ["dlishus"],
     "forgot":       ["frogot"],
+    "what":         ["what", "wat"]
 };
 
