@@ -129,7 +129,6 @@ var dictionary = {
     "something":    ["sumthn", "smthn", "somseng"],
     "watch":        ["wacth"],
     "power":        ["pwoer"],
-    "uncle":        ["uncel"],
     "above":        ["aboev"],
     "anal":         ["anl"],
     "high":         ["hi"],
@@ -170,7 +169,7 @@ var dictionary = {
     "shirt":        ["sirht"],
     "busy":         ["busi"],
     "drunk":        ["dronk"],
-    "shit":         ["shet"],
+    "shit":         ["shet", "shyt"],
     "date":         ["dait"],
     "chrome":       ["cohrme"],
     "windows":      ["windos"],
@@ -227,6 +226,7 @@ var dictionary = {
     "tell":         ["tael"],
     "before":       ["before", "befo", "bfur", "befur", "bfare"],
     "not":          ["not", "no"],
-    "knwo":         ["kno"]
+    "knwo":         ["kno"],
+    "nigger":       ["nigur", "niger"]
 };
 
