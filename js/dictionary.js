@@ -428,4 +428,6 @@ var dictionary = {
     "you":                 ["you", "u", "yuo", "yu", "yuu"],
     "your":                ["ur", "yer", "yur", "yor"],
     "yourself":            ["yurselv"]
+    "school":              ["skewl"]
+    
 };
